@@ -23,39 +23,47 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ## License
+  ## License:
   ${
     renderLicenseBadge(data.license)
   }
-  ## Table of contents
+  https://drive.google.com/file/d/1tobrO3ARs5QzuqH-ilUGNHDZk3mqkB1d/view?usp=drive_link
+
+
+  ## Table of contents:
+  
+  - [Description](##description)
   - [Installation](##installation)
-  - [Usage](#usage)
-  - [Description](#description)
-  - [License](#license)
+  - [Usage](##usage)
+  - [Contribution](##Contribution)
+  - [Testing](##Testing)
+  - [Additional Info](##Additional Info)
+   
   
 
-## Description
+## Description:
 ${data.description}
 ${data.why}
 ${data.problem}
 ${data.learn}
 
-## Installation
+## Installation:
 To install this application ,please follow the steps below
 ${data.install}
 
-## Usage
+## Usage:
+
 ![alt text](assets/images/screenshot.png)
 
-## Contribution & credit
+## Contribution & credit:
 ${data.contributors}
+N/A
 
-## Test
-
-
+## Testing:
+N/A
 ${data.test}
 
-##  Questions
+##  Questions:
 If you have any questions about the repo,you  can contact me at ${data.email}
 You can find more of my work at [${data.github}](https://github.com/${data.github}/)
 
